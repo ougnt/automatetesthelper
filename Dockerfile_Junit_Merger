@@ -1,0 +1,5 @@
+from       node
+workdir    /App
+run        npm install -g junit-report-merger
+copy       Dockerfile_Junit_Merger .
+entrypoint ["jrm"]
